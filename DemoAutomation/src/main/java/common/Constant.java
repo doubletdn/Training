@@ -9,10 +9,14 @@ public class Constant {
 		public static final String DATA_TEST_XML = "src/main/resource/TestData/";
 		public static final String CAPTURE_SCREENSHOT = "\\test-output\\screenshots";
 		public static final String interfacesXMLPath = "src/main/resource/interfaces/";
-
-		public static String HOME_URL = "";
-		public static String browser = "";
+		public static final String HOME_URL = "http://www.doubletvn.byethost31.com/aut";
+		
 		public static WebDriver driver;
+	}
+	
+	public static class LoginInfo {
+		public static final String userName = "demo";
+		public static final String password = "demo123";
 	}
 
 }

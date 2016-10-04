@@ -4,20 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import config.LoadDataConfig;
-
 public class Browser {
-	public Browser() {
-		LoadDataConfig loadDataConfig = new LoadDataConfig("Joomla");
-		Constant.PathConfig.browser = loadDataConfig.getBROWSER();
-		Constant.PathConfig.HOME_URL = loadDataConfig.getURL();
-	}
-
-	public WebDriver launch() {
+	public WebDriver launch(String browser) {
 		try {
-			if (Constant.PathConfig.browser.toLowerCase().equals("firefox")) {
+			if (browser.toLowerCase().equals("firefox")) {
 				driver = new FirefoxDriver();
-			} else if (Constant.PathConfig.browser.toLowerCase().equals("chrome")) {
+			} else if (browser.toLowerCase().equals("chrome")) {
 				System.setProperty("webdriver.chrome.driver", "src/main/resource/chromedriver.exe");
 				driver = new ChromeDriver();
 			}

@@ -1,5 +1,6 @@
 package page;
 
+import common.Constant;
 import common.Interfaces;
 
 public class HomePage extends AbstractPage {
@@ -7,9 +8,8 @@ public class HomePage extends AbstractPage {
 		control.setPage(this.getClass().getSimpleName());
 	}
 	
-	public boolean loginToHomePageSuccessfully(String userName){
+	public boolean isHomePageDisplayed(){
 		waitForPageLoaded();
-		sleep();
-		return isControlDisplayed(Interfaces.HomePage.userNameLabel, userName);
+		return isControlDisplayed(Interfaces.HomePage.userNameLabel, Constant.LoginInfo.userName);
 	}
 }

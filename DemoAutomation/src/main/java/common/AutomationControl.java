@@ -26,19 +26,15 @@ public class AutomationControl {
 					
 				if (control.getElementsByTagName("name").item(0).getTextContent().equals(controlName)) 
 					{
-
 						setControlType(control.getElementsByTagName("type").item(0).getTextContent());
 						setControlValue(control.getElementsByTagName("value").item(0).getTextContent());
-						
 					}
 			}
-
 		}
 		
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
 	
 	public NodeList readXLMFile(String XMLFolderPath, String xmlFileName, String tagName)

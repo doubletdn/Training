@@ -90,9 +90,9 @@ public class AbstractTest {
 		}
 	}
 
-	public static void navigateToTestSite() {
+	public static void navigateToTestSite(String browser) {
 		Browser br = new Browser();
-		Constant.PathConfig.driver = br.launch();
+		Constant.PathConfig.driver = br.launch(browser);
 		Constant.PathConfig.driver.get(Constant.PathConfig.HOME_URL);
 		Constant.PathConfig.driver.manage().deleteAllCookies();
 		maximize();

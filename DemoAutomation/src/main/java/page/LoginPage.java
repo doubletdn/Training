@@ -16,9 +16,7 @@ public class LoginPage extends AbstractPage {
 		while(isControlDisplayed(Interfaces.LoginPage.userNameTextbox))
 		{
 			type(Interfaces.LoginPage.userNameTextbox, userName);
-			sleep();
 			type(Interfaces.LoginPage.passwordTextbox, password);
-			sleep();
 			click(Interfaces.LoginPage.loginButton);
 			waitForPageLoaded();
 		}

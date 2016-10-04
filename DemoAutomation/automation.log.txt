@@ -1,2 +1,2 @@
-2016-10-03 04:39:59,586 INFO  [testcase.LoginFunction] - Login to Home Page
-2016-10-03 04:40:13,690 INFO  [testcase.LoginFunction] - VP01: Verify that Login to Home page successfully with valid account
+2016-10-03 20:31:10,578 INFO  [testcase.LoginFunction] - Login to Home Page
+2016-10-03 20:31:17,551 INFO  [testcase.LoginFunction] - VP01: Verify that Login to Home page successfully with valid account

@@ -1,0 +1,10 @@
+/chromedriver.exe
+/interfaces/
+/log4j.xml
+/automation.config.xml
+/common/
+/config/
+/page/
+/test/
+/testcase/
+/testng/
