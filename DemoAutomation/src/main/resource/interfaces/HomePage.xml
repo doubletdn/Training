@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page name="HomePage">
+	<control>
+		<name>userNameLabel</name>
+		<type>xpath</type>
+		<value>//form[@id='login-form']/div[contains(.,'%s')]</value>
+	</control>
+	<control>
+		<name>logoutButton</name>
+		<type>xpath</type>
+		<value>//form[@id='login-form']/div[contains(@class,'logout')]</value>
+	</control>
+</page>
