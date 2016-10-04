@@ -1,6 +1,5 @@
 package page;
 
-import common.Constant;
 import common.Interfaces;
 
 public class HomePage extends AbstractPage {
@@ -10,7 +9,7 @@ public class HomePage extends AbstractPage {
 	
 	public boolean isHomePageDisplayed(){
 		waitForPageLoaded();
-		return isControlDisplayed(Interfaces.HomePage.userNameLabel, Constant.LoginInfo.userName);
+		return isControlDisplayed(Interfaces.HomePage.userIcon);
 	}
 	
 	public static void logout(){
