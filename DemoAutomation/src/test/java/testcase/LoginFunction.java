@@ -29,6 +29,9 @@ public class LoginFunction extends AbstractTest {
 		homePage = PageFactory.getHomePage();
 		verifyPoint = verifyTrue(homePage.isHomePageDisplayed());
 		log.info("VP01: " + verifyPoint + ": Verify that Login to Home page successfully with valid account");
+		
+		log.info("Log out");
+		HomePage.logout();
 	}
 	
 	@AfterClass(alwaysRun = true)

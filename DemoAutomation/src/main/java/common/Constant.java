@@ -10,6 +10,7 @@ public class Constant {
 		public static final String CAPTURE_SCREENSHOT = "\\test-output\\screenshots";
 		public static final String interfacesXMLPath = "src/main/resource/interfaces/";
 		public static final String HOME_URL = "http://www.doubletvn.byethost31.com/aut";
+		public static final String ADMINSTRATOR_URL = "http://www.doubletvn.byethost31.com/aut/administrator/";
 		
 		public static WebDriver driver;
 	}

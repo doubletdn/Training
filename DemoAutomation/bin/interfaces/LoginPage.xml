@@ -3,16 +3,16 @@
 	<control>
 		<name>userNameTextbox</name>
 		<type>id</type>
-		<value>modlgn-username</value>
+		<value>mod-login-username</value>
 	</control>
 	<control>
 		<name>passwordTextbox</name>
 		<type>id</type>
-		<value>modlgn-passwd</value>
+		<value>mod-login-password</value>
 	</control>
 	<control>
 		<name>loginButton</name>
 		<type>xpath</type>
-		<value>//button[contains(text(),'Log in')]</value>
+		<value>//button[contains(.,'Log in')]</value>
 	</control>
 </page>

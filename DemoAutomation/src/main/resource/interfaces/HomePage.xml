@@ -3,11 +3,21 @@
 	<control>
 		<name>userNameLabel</name>
 		<type>xpath</type>
-		<value>//form[@id='login-form']/div[contains(.,'%s')]</value>
+		<value>//h2[contains(text(),'Logged-in Users')]/..//a[contains(text(),'%s')]</value>
 	</control>
 	<control>
 		<name>logoutButton</name>
 		<type>xpath</type>
-		<value>//form[@id='login-form']/div[contains(@class,'logout')]</value>
+		<value>//a[contains(text(),'Logout')]</value>
+	</control>
+	<control>
+		<name>editAccountButton</name>
+		<type>xpath</type>
+		<value>//a[contains(text(),'Edit Account')]</value>
+	</control>
+	<control>
+		<name>userIcon</name>
+		<type>xpath</type>
+		<value>//ul[@class='nav nav-user pull-right']/li[@class='dropdown']/a</value>
 	</control>
 </page>
